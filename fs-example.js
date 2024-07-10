@@ -1,4 +1,5 @@
-const fs = require('fs'); // Import the fs module
+// Import the 'fs' module to use its functionalities
+const fs = require('fs'); 
 
 // Write content to a file named 'example.txt'
 fs.writeFile('example.txt', 'Hello, world!', (err) => {

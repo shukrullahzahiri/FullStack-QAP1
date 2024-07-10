@@ -1,12 +1,17 @@
-const EventEmitter = require('events'); // Import the events module
-class MyEmitter extends EventEmitter {} // Create a class that extends EventEmitter
+// Import the 'events' module to use its functionalities
+const EventEmitter = require('events'); 
 
-const myEmitter = new MyEmitter(); // Instantiate the class
+// Create a class 'MyEmitter' that extends EventEmitter
+class MyEmitter extends EventEmitter {} 
+
+// Instantiate the MyEmitter class to create an event emitter object
+const myEmitter = new MyEmitter(); 
 
 // Add an event listener for the 'event' event
+// This listener will log a message when the 'event' event is emitted
 myEmitter.on('event', () => {
     console.log('An event occurred!'); // Log message when event is emitted
 });
 
-// Emit the 'event' event
+// Emit the 'event' event to trigger the event listener
 myEmitter.emit('event'); // Trigger the event

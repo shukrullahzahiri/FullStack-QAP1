@@ -1,6 +1,7 @@
-const path = require('path'); // Import the path module
+// Import the 'path' module to use its functionalities
+const path = require('path'); 
 
-// Join multiple segments of a path
+// Join multiple segments of a path into a single path string
 const joinedPath = path.join('/users', 'john', 'docs');
 console.log(`Joined path: ${joinedPath}`); // Output: /users/john/docs
 
